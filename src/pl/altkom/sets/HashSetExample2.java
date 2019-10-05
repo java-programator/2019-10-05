@@ -36,13 +36,9 @@ public class HashSetExample2 {
     public static void main(String[] args) {
         Person p1 = new Person("Pawel", 30);
         Person p2 = new Person("Bogdan", 30);
-        Person p3 = new Person("Pawel", 33);
-        Person p4 = new Person("Bogdan", 33);
 
         System.out.println(p1);
         System.out.println(p2);
-        System.out.println(p3);
-        System.out.println(p4);
 
         System.out.println("================================");
 
@@ -54,6 +50,10 @@ public class HashSetExample2 {
             System.out.println(p);
         }
 
-        System.out.println(persons.contains(p2));
+        System.out.println("================================");
+
+        Person p3 = new Person("Pawel", 32);
+        System.out.println(persons.contains(p3));
+        System.out.println(p1.equals(p3));
     }
 }
